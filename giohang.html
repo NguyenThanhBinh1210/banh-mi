@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="giohang.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <header>
+    <a href="index.html#home" class="logo"
+      ><i class="fas fa-utensils"></i>Thơm-Ngon</a
+    >
+
+    <nav class="navbar">
+      <a class="active" href="index.html#home">Trang chủ</a>
+      <a href="index.html#dishes">Nổi bật</a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#menu">menu</a>
+      <a href="index.html#review">Đánh giá</a>
+      <a href="index.html#order">order</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <div style="display: inline-block; position: relative">
+        <a href="giohang.html" class="fas fa-shopping-cart"></a>
+        <span class="cart-length">0</span>
+      </div>
+      <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+  </header>
+  <body class="showCart">
+    <div class="container-cart">
+      <div class="empty-cart-container">
+        <div class="empty-cart-content">
+          Chưa có sản phẩm nào trong giỏ
+          <div class="underline-span">
+            <a href="index.html">Mua ngay</a>
+            <span class="underline"></span>
+          </div>
+        </div>
+      </div>
+      <div class="custom-div-table">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th class=""></th>
+              <th class="">Hình ảnh</th>
+              <th class="">Sản phẩm</th>
+              <th class="">Giá</th>
+              <th class="">Số lượng</th>
+              <th class="">Tạm tính</th>
+            </tr>
+          </thead>
+          <tbody id="yourTableId"></tbody>
+        </table>
+      </div>
+      <div class="custom-md-width">
+        <h2 class="custom-heading">Cộng giỏ hàng</h2>
+        <div class="custom-summary-box">
+          <div class="custom-summary-box-div">
+            <div>Tạm tính</div>
+            <div id="subTotal">0đ</div>
+          </div>
+          <div class="custom-summary-box-div">
+            <div>Giao hàng</div>
+            <div class="flex flex-col items-end text-sm">
+              <div>Giao hàng miễn phí</div>
+            </div>
+          </div>
+          <div class="custom-summary-box-div">
+            <div>Tổng</div>
+            <div id="total">0đ</div>
+          </div>
+        </div>
+        <div class="custom-button-container">
+          <button class="custom-button" style="outline: none; border: none">
+            <a href="phuongthucthanhtoan.html">Tiến hành thanh toán</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="giohang.js"></script>
+  </body>
+</html>

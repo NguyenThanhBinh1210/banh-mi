@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 BERGER GÀ VÀ THỊT HEO XÔNG KHÓI",
+        "price": 78.000,
+        "image": "images/dish-1.png"
+    },
+    {
+        "id": 2,
+        "name":" LD02 BÁNH MÌ LẠP XƯỞNG",
+        "price": 21.000,
+        "image": "images/dish-2.png"
+    },
+    {
+        "id": 3,
+        "name":" LD03 BÁNH MÌ THỊT NƯỚNG",
+        "price": 16.000,
+        "image": "images/dish-3.png"
+    },
+    {
+        "id": 4,
+        "name":" LD04 SANDWICH CÁ HỒI",
+        "price": 84.000,
+        "image": "images/dish-4.png"
+    },
+    {
+        "id": 5,
+        "name":" LD05 SANDWICH THỊT HUN KHÓI",
+        "price": 33.000,
+        "image": "images/dish-5.png"
+    },
+    {
+        "id": 6,
+        "name":" LD06 BURGER BÒ HOÀNG GIA ĐẶC BIỆT",
+        "price": 88.000,
+        "image": "images/dish-6.png"
+    },
+    {
+        "id": 7,
+        "name":" LD07 BÁNH MÌ TÔM HÙM",
+        "price": 250.000,
+        "image": "images/menu-1.jpg"
+    },
+    {
+        "id": 8,
+        "name":" LD08 BURGER BÒ WGYUA",
+        "price": 179.000,
+        "image": "images/menu-2.jpg"
+    },
+    {
+        "id": 9,
+        "name":" LD09 BÁNH MÌ BÒ VIÊN ",
+        "price": 37.000,
+        "image": "images/menu-3.jpg"
+    },
+    {
+        "id": 10,
+        "name":" LD010 SANDWICH CÁ HỒI XÔNG KHÓI & TRỨNG CÁ TẦM",
+        "price": 229.000,
+        "image": "images/menu-4.jpg"
+    },
+    {
+        "id": 11,
+        "name":" LD011 SANDWICH CÁ NGỪ",
+        "price": 88.000,
+        "image": "images/menu-5.jpg"
+    },
+    {
+        "id": 8,
+        "name":" LD08 COMBO BÁNH MÌ BÓNG ĐÊM VÀ TRÀ SỮA",
+        "price": 49.000,
+        "image": "images/menu-6.jpg"
+    },
+    {
+        "id": 12,
+        "name":" LD08 COMBO BURGER BÒ ĐẶC BIỆT VÀ NƯỚC NGỌT",
+        "price": 59.000,
+        "image": "images/menu-7.jpg"
+    },
+    {
+        "id": 13,
+        "name":" LD08 COMBO SANDWICH VÀ SỮA",
+        "price": 47.000,
+        "image": "images/menu-8.jpg"
+    },
+    {
+        "id": 14,
+        "name":" LD08 COMBO BÁNH MÌ CHẢO VÀ TRÀ SỮA",
+        "price": 52.000,
+        "image": "images/menu-9.jpg"
+    }
+    
+
+]

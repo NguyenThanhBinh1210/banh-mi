@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <header>
+    <a href="index.html#home" class="logo"
+      ><i class="fas fa-utensils"></i>Thơm-Ngon</a
+    >
+
+    <nav class="navbar">
+      <a class="active" href="index.html#home">Trang chủ</a>
+      <a href="index.html#dishes">Nổi bật</a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#menu">menu</a>
+      <a href="index.html#review">Đánh giá</a>
+      <a href="index.html#order">order</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <div style="display: inline-block; position: relative">
+        <a href="giohang.html" class="fas fa-shopping-cart"></a>
+        <span class="cart-length">0</span>
+      </div>
+      <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+  </header>
+  <body>
+    <div class="custom-container">
+      <form action="" class="container">
+        <div>
+          <h3 style="padding-top: 1.5rem; font-size: 29px; font-weight: bold">
+            Thông tin thanh toán
+          </h3>
+          <div class="form-main">
+            <div class="form-group mt-3">
+              <label for="name" class="form-label"> Họ và tên </label>
+              <input
+                required
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Họ tên của bạn"
+              />
+            </div>
+            <div class="form-grid mt-3">
+              <div class="form-column">
+                <label for="phone" class="form-label"> Số điện thoại </label>
+                <input
+                  required
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="form-input"
+                  placeholder="Số điện thoại của bạn"
+                />
+              </div>
+              <div class="form-column">
+                <label for="email" class="form-label"> Email </label>
+                <input
+                  required
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Email của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-grid mt-3">
+              <div class="form-column" style="grid-column: span 2">
+                <label for="address" class="form-label"> Địa chỉ </label>
+                <input
+                  required
+                  type="text"
+                  name="address"
+                  id="address"
+                  class="form-input"
+                  placeholder="Ví dụ: Số 20, ngõ 90, tổ 30, thôn...."
+                />
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="note" class="form-label"> Ghi chú </label>
+              <input
+                required
+                type="text"
+                name="note"
+                id="note"
+                class="form-input"
+                placeholder="Ghi chú của bạn"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="checkout-section">
+          <table class="checkout-table w-full mt-10 md:mt-auto">
+            <thead>
+              <tr>
+                <th class="table-header">Sản phẩm</th>
+                <th class="table-header">Tạm tính</th>
+              </tr>
+            </thead>
+            <tbody id="cart-table-body"></tbody>
+            <thead>
+              <tr id="cart-total-row">
+                <th class="table-header">Tạm tính</th>
+                <th class="table-data table-temp">0đ</th>
+              </tr>
+              <tr>
+                <th class="table-header">Giao hàng</th>
+                <th class="table-data table-free-shipping">
+                  Giao hàng miễn phí
+                </th>
+              </tr>
+              <tr>
+                <th class="table-header">Tổng</th>
+                <th class="table-total">0đ</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="additional-info w-full mt-10 md:mt-auto"></div>
+        </div>
+        <div class="payment-method-section flex justify-center mt-5">
+          <div class="payment-method-container mt-2 w-full">
+            <label for="paymentMethod" class="block mb-1 text-sm text-gray-900">
+              Hình thức thanh toán
+            </label>
+            <select
+              id="paymentMethod"
+              class="payment-method-select bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full px-2.5 py-1.5"
+            >
+              <option value="0">Thanh toán khi nhận hàng</option>
+              <option value="1">Thanh toán qua ngân hàng</option>
+            </select>
+          </div>
+        </div>
+        <div class="submit-button-section flex justify-center pt-10 mt-5">
+          <div
+            class="submit-button-container mt-2 h-[40px] w-full hover:bg-white hover:text-black bg-orange-400 transition-all text-white rounded-full border-[1px] hover:border-black"
+          >
+            <button
+              type="submit"
+              class="submit-button h-[40px] uppercase rounded-full px-5 text-[14px] w-full"
+            >
+              Đặt hàng
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/order.js"></script>
+  </body>
+</html>
